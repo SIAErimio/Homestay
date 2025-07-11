@@ -179,14 +179,22 @@ body {
     color: rgb(76, 190, 152);
 }
 
-.fa-brands.fa-x-twitter.fa-2x:hover {
-    color: rgb(209, 63, 209);
-}
-
 .fa-brands.fa-youtube.fa-2x:hover {
     color: rgb(221, 81, 81);
 }
 
 .fa-brands.fa-facebook.fa-2x:hover {
     color: rgb(59, 59, 163)
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: none;               /* completely off */
+  }
+  50% {
+    /* x-offset   y-offset   blur   spread   color */
+    box-shadow:
+      0          0          40px    15px     rgb(255, 255,  50),   /* main halo */
+      0          0          80px    30px     rgba(255, 255,  50, .6); /* soft outer ring */
+  }
 }
