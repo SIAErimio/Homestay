@@ -41,6 +41,8 @@ body {
   height: 50vh;
   font-family: 'Poppins', sans-serif;
   font-weight: bold; 
+  animation-name: slideUp;
+  animation-duration: 1.5s;
 }
 
 
@@ -213,4 +215,8 @@ opacity: 0.9;
 @keyframes underlineGlow {
   0%,100% { box-shadow: none; }
   50%     { box-shadow: 0 6px 15px 3px rgba(189, 163, 151, 0.8); }
+}
+
+@keyframes slideUp {
+    from{transform: translateY(300%)}
 }
