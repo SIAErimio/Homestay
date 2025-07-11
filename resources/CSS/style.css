@@ -82,7 +82,13 @@ body {
 
 .menu a:hover {
   background-color: brown;
+  border: 2px solid brown;
+  border-radius: 25%;
   color: white;
+}
+
+.menu a.active:hover {
+    animation: underlineGlow .9s infinite alternate ease-in-out;
 }
 
 .menu li {
@@ -194,7 +200,12 @@ body {
   50% {
     /* x-offset   y-offset   blur   spread   color */
     box-shadow:
-      0          0          40px    15px     rgb(255, 255,  50),   /* main halo */
-      0          0          80px    30px     rgba(255, 255,  50, .6); /* soft outer ring */
+      0          0          40px    15px     rgb(175, 102, 84),   /* main halo */
+      0          0          80px    30px     rgba(224, 148, 142, 0.6); /* soft outer ring */
   }
+}
+
+@keyframes underlineGlow {
+  0%,100% { box-shadow: none; }
+  50%     { box-shadow: 0 6px 15px 3px rgba(202, 179, 168, 0.8); }
 }
