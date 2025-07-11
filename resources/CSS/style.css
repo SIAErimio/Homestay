@@ -43,8 +43,13 @@ body {
   font-weight: bold; 
   animation-name: slideUp;
   animation-duration: 1.5s;
+  cursor: pointer;
 }
 
+.header a {
+  color: #000;            /* black text */
+  text-decoration: none;  /* no underline */
+}
 
 .menu {
   text-decoration: none;
